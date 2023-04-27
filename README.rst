@@ -16,6 +16,7 @@ Requirements
 ------------
 
 - Python >= 2.7
+- Ubuntu 22.04+
 
 Installation
 ------------
@@ -26,7 +27,30 @@ clone the latest development git master::
     cd pyavb
     python setup.py install
 
-Documentation
+Conda
+~~~~~
+I installed ``conda`` to manage the environment per `This guide <https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html>`_
+
+Getting Started
+---------------
+Create a conda environment::
+
+    conda create -n pyavb
+
+Setup the ``PYTHON_PATH``::
+
+    export PYTHONPATH=$PYTHONPATH:/path/to/pyavb/src:/path/to/pyavb/src/avb
+
+Output AVB to CSV
+-----------------
+
+The following will produce a csv file of the avb input file, ``filename.avb``::
+
+    pyavb/examples/python avb2csv.py filename.avb
+
+The output CSV file will be produced in the same directory and is named ``data-YYYMMddTHHmmss.csv``
+
+Documentation for pyavb
 -------------
 
 Documentation is available on `Read the Docs. <http://pyavb.readthedocs.io/>`_
