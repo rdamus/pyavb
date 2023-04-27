@@ -37,6 +37,10 @@ Create a conda environment::
 
     conda create -n pyavb
 
+Activate the environment::
+
+    conda activate pyavb
+
 Setup the ``PYTHON_PATH``::
 
     export PYTHONPATH=$PYTHONPATH:/path/to/pyavb/src:/path/to/pyavb/src/avb
