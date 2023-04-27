@@ -3,7 +3,9 @@
 pyavb
 =====
 
-A python module for reading and writing Avid Bin Files (AVB) files.
+A python module for reading and writing Avid Bin Files (AVB) files.  Forked from https://github.com/markreidvfx/pyavb
+
+Modified to include an ability to export AVB files to comma separated value (CSV)
 
 Notice
 ------
@@ -18,13 +20,9 @@ Requirements
 Installation
 ------------
 
-You can install pyavb via::
+clone the latest development git master::
 
-    pip install pyavb
-
-or clone the latest development git master::
-
-    git clone https://github.com/markreidvfx/pyavb
+    git clone https://github.com/rdamus/pyavb
     cd pyavb
     python setup.py install
 
